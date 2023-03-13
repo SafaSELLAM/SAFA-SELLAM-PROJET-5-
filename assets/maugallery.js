@@ -261,6 +261,8 @@
             .show(300);
         }
       });
+      // rajout fond doré
+      $(".tags-bar").addClass("active-tag-bar");
     }
   };
 })(jQuery);
