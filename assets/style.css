@@ -61,9 +61,9 @@ body {
 	left: 0;
 	z-index: -1;
 }
-.carousel_img{
+/* .carousel_img{
 	height: auto;
-}
+} */
 
 .picture {
 	flex: 1;
@@ -73,8 +73,6 @@ body {
 
 .picture img {
 	width: 100%;
-	height: auto;
-
 }
 #about-me {
 	flex: 2
@@ -110,6 +108,10 @@ body {
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+.active-tag-bar .nav-link.active-tag {
+	color: #fff;
+	background-color: #BEB45A;
+  }
 .nav-pills .nav-link {
 	color: #000
 }
