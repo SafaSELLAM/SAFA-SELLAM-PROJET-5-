@@ -142,14 +142,13 @@
 
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i - 1;
-          if (index < 0) {
-            index = imagesCollection.length - 1;
-          }
+          index = i;
         }
       });
-      prev = imagesCollection[index] || imagesCollection[0];
-      $(".lightboxImage").attr("src", $(prev).attr("src"));
+      next =
+        imagesCollection[index - 1] ||
+        imagesCollection[imagesCollection.length - 1];
+      $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage(lightboxId) {
       let activeImage = null;
